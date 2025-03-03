@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f3a0ff, #b8d8ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1E6FF;
+    padding: 30px;
+    height: 100vh;
+    width: 180px; /* Adjusted for vertical sidebar */
+    border-radius: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo img {
+    width: 180px;
+    margin-bottom: 60px;
+}
+
+/* Vertical Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    background-color: #ffb0da;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Gooey Hover Effect */
+nav ul li a:hover {
+    background-color: #d3bcf6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+nav ul li a img {
+    width: 30px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Logout Button */
+.profile {
+    margin-top: auto;
+    text-align: center;
+}
+
+.profile img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.logout-btn {
+    padding: 10px 15px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #e63946;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Search Container */
+.search-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#searchQuery {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+/* File List Table */
+.file-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.file-list th, .file-list td {
+    padding: 12px;
+    text-align: center;
+   
+}
+
+.file-list th {
+    
+}
+
+.view-button {
+    padding: 8px 12px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    background-color: #007B9E;
+}
+.delete-button {
+    padding: 8px 12px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.view-button:hover {
+    background-color: #007B9E;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #searchQuery {
+        width: 80%;
+    }
+}

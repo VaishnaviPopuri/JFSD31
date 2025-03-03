@@ -1,0 +1,317 @@
+s
+Copy code
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0ff;
+    color: #333;
+}
+
+
+
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    position: relative;
+    padding: 0px;
+    gap: 0px;
+    padding: 0;
+    
+}
+
+
+.about-section h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto; /* Center it horizontally */
+    display: inline-block;
+    padding: 0;
+    width: auto;
+}
+
+/* Logo */
+.logo-img {
+    width: 200px;
+    height: auto;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    z-index: 1000;
+    margin: 0;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 100px; /* Reduced height from the top */
+    left: -100%; /* Initially hidden */
+    height: 40vh; /* Adjusted height to remain responsive */
+    width: 200px;
+    background-color: #b0c0f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease; /* Smooth transition */
+}
+
+
+
+.navbar.active {
+    left: 0; /* Slide in when active */
+}
+
+/* Navbar Buttons */
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Adjust as needed */
+    width: 100%;
+    gap: 10px; /* Add space between buttons */
+}
+
+.nav-buttons a {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.nav-buttons button {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #cdcdf3;
+    color: #0f0f0f;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #b46ae1;
+    color: #fff;
+}
+
+.auth-buttons {
+    position: absolute;
+    top: 10px; /* Adjusted to reduce gap */
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #b2ede0;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background-color: #98e2d1;
+}
+
+/* Main Content */
+main {
+    margin-left: 0%;
+    padding: 0 0 10px; /* Minimized padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+/* Centering About Us Heading */
+.about-section h1 {
+    font-size: 36px;
+    padding: 0 0 10px;
+    margin-top:0px;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: center;
+    width: 80%; /* Ensure it spans full width for centering */
+    display: flex;
+    justify-content: center;
+}
+
+
+/* About Section Grid */
+.about-content {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    margin: 0 40px;
+    margin-left: 23px;
+    margin-top: 0%;
+}
+.blinking-underline {
+    display: inline-block;
+    font-size: 24px; /* Adjust as needed */
+    color: #a64ac9; /* Color of the text */
+    position: relative;
+}
+
+.blinking-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: #a64ac9; /* Color of the underline */
+    animation: blink-underline 1s infinite;
+}
+
+/* Keyframes for the blinking underline */
+@keyframes blink-underline {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+
+.circle {
+    background-color: #E6E6FA;
+    border-radius: 50%;
+    width: 100%; /* Adjust width for alignment */
+    max-width: 400px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.circle p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* Team Section */
+.team-section {
+    width: 80%; /* Align width with circle elements */
+    max-width: 400px;
+    background-color: #ffe6e6;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 32px;
+    color: #b46ae1;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.team-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.team-section a {
+    color: #b46ae1;
+    text-decoration: none;
+}
+
+.team-section a:hover {
+    text-decoration: underline;
+}
+
+/* Circular Content */
+.circle {
+    background-color: #E6E6FA;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle p {
+    font-size: 10px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* Team Section */
+.team-section {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-color: #ffe6e6;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 350px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 32px;
+    color: #b46ae1;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.team-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.team-section a {
+    color: #b46ae1;
+    text-decoration: none;
+}
+
+.team-section a:hover {
+    text-decoration: underline;
+}

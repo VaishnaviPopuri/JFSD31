@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0ff; /* Fallback color */
+  
+    background-size: cover; 
+    background-repeat: no-repeat; 
+   
+     background-position: center;
+    color: #333;
+}
+
+.form-container {
+    width: 400px; /* Width adjusted for better alignment */
+    background-color: #d4e7f5;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+        
+        
+        label {
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+        
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #d1901b;
+}
+ /* Styling for buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container input[type="submit"],
+.button-container input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #6d4e9f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #d1901b;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button-container input[type="submit"]:hover,
+.button-container input[type="reset"]:hover {
+    background-color: #5a3f7d;
+}
+      /*   h3 {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+         */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px); /* Ensures it uses the available viewport height */
+}
+.welcome-section {
+    background-color: #E6E6FA;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; /* Center text inside the section */
+    width: 70%; /* Adjust as per the content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.welcome-section .description {
+    font-size: 22px;
+    margin: 20px 0;
+    line-height: 1.6;
+    max-width: 800px;
+    font-style: italic;
+    text-align: center; /* Center the description */
+}
+
+.welcome-section img {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.form-heading {
+    text-align: center;
+    font-size: 2em;
+    color: #6d4e9f;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px; 
+    
+    letter-spacing: 1px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0ff;
+    color: #333;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 15%; /* Increased width for better alignment */
+    background-color: #b0c0f9;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Added a slight shadow for depth */
+}
+
+.logo img {
+    width: 200px; 
+    height: auto;
+    margin-bottom: 30px; 
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:200px;
+    width: 100%;
+}
+
+.nav-buttons a {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.nav-buttons button {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #cdcdf3;
+    color: #0f0f0f;
+    border: none;
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #b46ae1;
+    color: #fff;
+}
+
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #b2ede0;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background-color: #98e2d1;
+}

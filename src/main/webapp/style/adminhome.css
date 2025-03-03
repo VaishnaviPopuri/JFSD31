@@ -1,0 +1,110 @@
+/* General body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     background-color: rgba(230, 230, 250, 0.8); 
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    width: 250px;
+    height: 100%;
+    background-color: #2f3e4d;
+    color: white;
+    padding: 20px 10px;
+    transition: left 0.3s ease-in-out; /* Smooth slide effect */
+    z-index: 1000;
+}
+
+.sidebar h4{
+	
+	margin-top: 42px;
+	
+	
+}
+
+.sidebar.active {
+    left: 0; /* Slide in when active */
+}
+
+.sidebar h4 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.sidebar .nav {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 15px;
+}
+
+.sidebar .nav-link {
+    color: #c1c1c1;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #b892f5;
+    color: white;
+}
+
+/* Toggle button */
+.toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: #2f3e4d;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1100;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn i {
+    font-size: 20px;
+}
+
+.toggle-btn:hover {
+    background-color: #b892f5;
+}
+.img {
+    width: 50px;
+    height: 60px;
+    margin-left: 470px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 120px;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    text-align: center;
+
+    /* Add border for emphasis */
+    border: 2px solid #b892f5; /* Light purple color */
+
+    /* Add subtle shadow */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+

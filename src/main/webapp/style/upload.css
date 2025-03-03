@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f3a0ff, #b8d8ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1E6FF;
+    padding: 30px;
+    height: 100vh;
+    width: 180px; /* Adjusted for vertical sidebar */
+    border-radius: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo img {
+    width: 180px;
+    margin-bottom: 60px;
+}
+
+/* Vertical Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    background-color: #ffb0da;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Gooey Hover Effect */
+nav ul li a:hover {
+    background-color: #d3bcf6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+nav ul li a img {
+    width: 30px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Logout Button */
+.profile {
+    margin-top: auto;
+    text-align: center;
+}
+
+.profile img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.logout-btn {
+    padding: 10px 15px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #e63946;
+}
+
+/* Container for Upload Section */
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Upload Section */
+.upload-section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.file-input-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+.input-field {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    gap: 10px;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.input-field textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 600px;
+}
+
+.drop-area p {
+    color: #333;
+    font-size: 16px;
+}
+
+#browseFiles {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+#browseFiles:hover {
+    background-color: #0056b3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    max-width: 150px;
+}
+
+.buttons button#updateButton {
+    background-color: #ff9800;
+}
+
+.buttons button#deleteButton {
+    background-color: #f44336;
+}
+
+.buttons button:hover {
+    opacity: 0.9;
+}
+
+#fileList {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#fileList p {
+    font-size: 54px;
+    color: #333;
+    margin-bottom: 5px;
+}
